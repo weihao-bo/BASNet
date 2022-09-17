@@ -2,7 +2,9 @@
 
 By  Weihao Bo, Jie Liu, Xijian Fan, Tardi Tjahjadi, Qiaolin Ye, Liyong Fu
 
-The PyTorch code for IEEE TGRS paper "BASNet: Burned Area Segmentation Network for Real-Time Detection of Damage Maps in Remote Sensing Images"  
+### **Abstract:**
+
+Since remote sensing images of post-fire vegetation are characterized by high resolution, multiple interferences, and high similarities between the background and the target area, it is difficult for existing methods to detect and segment the burned area in these images with sufficient speed and accuracy. In this article, we apply salient object detection (SOD) to burned area segmentation (BAS), the first time this has been done, and propose an efficient burned area segmentation network (BASNet) to improve the performance of unmanned aerial vehicle (UAV) high-resolution image segmentation. BASNet comprises positioning module and refinement module. The positioning module efficiently extracts high-level semantic features and general contextual information via global average pooling layer and convolutional block (CB) to determine the coarse location of the salient region. The refinement module adopts the CB attention module to effectively discriminate the spatial location of objects. In addition, to effectively combine edge information with spatial location information in the lower layer of the network and the high-level semantic information in the deeper layer, we design the residual fusion module to perform feature fusion by level to obtain the prediction results of the network. Extensive experiments on two UAV datasets collected from Chongli in China and Andong in South Korea, demonstrate that our proposed BASNet significantly outperforms the state-of-the-art SOD methods quantitatively and qualitatively. BASNet also achieves a promising prediction speed for processing high-resolution UAV images, thus providing wide-ranging applicability in post-disaster monitoring and management.
 
 ## Introduction
 
