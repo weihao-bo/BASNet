@@ -40,9 +40,46 @@ Download the datasets and unzip them into `data` folder.
 
 ### 4. Training
 
-### 5. Evaluation
+```
+cd src
+python train.py
+```
 
-### 6. Results
+- We use [ResNet-18](https://download.pytorch.org/models/resnet18-5c106cde.pth) as the backbone network.
+- We train our model on our dataset captured in ChongLi District and the dataset provided by the work [Damage-Map Estimation Using UAV Images and Deep Learning Algorithms for Disaster Management System](https://www.mdpi.com/2072-4292/12/24/4169) captured in Andong City.
+- After training, the result models will be saved in `out` folder. 
+
+### 5. Testing
+
+```
+cd src
+python train.py
+```
+
+- After testing, the result saliency maps will be saved in `eval` folder.
+
+### 6. Evaluation
+
+```
+    cd eval
+    matlab main
+```
+
+- We evaluate the performance of our BASNet with MATLAB code.
+
+### 7.Results
+
+- Chongli District dataset, China
+
+  | Method | F-measure |  MAE  | E-measure |
+  | :----: | :-------: | :---: | :-------: |
+  | BASNet |   0.772   | 0.010 |   0.767   |
+
+- Andong City dataset, South Korea
+
+  | Method | F-measure |  MAE  | E-measure |
+  | :----: | :-------: | :---: | :-------: |
+  | BASNet |   0.615   | 0.016 |   0.657   |
 
 ## Citation
 
